@@ -1,5 +1,6 @@
 # this
 在JavaScript中，this总是指向一个对象，而具体指向哪个对象是在函数运行时基于函数的执行环境动态绑定的，而非函数被声明时的环境。
+
 函数在运行时，this的指向分为以下几种情况：
 1. 默认绑定: this指向window或undefined(严格模式下)
 ```
@@ -70,10 +71,12 @@ function Person(name) {
 const person = new Person("person1"); // person1
 ```
 
-**绑定优先级**：
+**绑定优先级**
+
 new构造绑定>硬绑定>隐式绑定>默认绑定
 
 **其他情况：箭头函数**
+
 在箭头函数中，this的指向是由外层（函数或全局）作用域来决定的。
 
 ```
